@@ -1,4 +1,4 @@
-﻿function startshuts(){
+﻿function startshuts($days){
 $shuts = Get-EventLog System | Where-Object {($_.EventID -ilike 6005) -or ($_.EventID -ilike 6006)}
 
 $shutsTable = @()

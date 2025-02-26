@@ -18,5 +18,3 @@ $loginoutsTable += [pscustomobject]@{"Time" = $loginouts[$i].TimeGenerated;
 }
 return $loginoutsTable
 }
-$show = days 23
-$show
