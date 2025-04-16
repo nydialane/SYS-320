@@ -82,16 +82,16 @@ function checkUser($name){
 } else { return $false}
 }
 
-function checkPassword ($password) {
-            if($password.Length -gt 6){
-                if($password -match '[^a-zA-Z0-9\s]') {
-                    if($password -match '\d'){
-                        if($password -match '[a-zA-Z]'){ 
-
-                            return $true;
-                    }
-                  }
-                }
-                } return $false 
-            }
+#function checkPassword ($password) {
+   #         if($password.Length -gt 6){
+   #             if($password -match '[^a-zA-Z0-9\s]') {
+   #                 if($password -match '\d'){
+    #                    if($password -match '[a-zA-Z]'){ 
+    #
+    #                        return $true;
+    #                }
+    #              }
+     #           }
+     #           } return $false 
+     #       }
   

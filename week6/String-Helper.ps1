@@ -27,3 +27,14 @@ for($j=0; $j -lt $splitted.Count; $j++){
 
 return $allines
 }
+
+function checkPassword($plainpass){
+    if ($plainpass.length -gt 5){ 
+           if($plainpass -match '[^a-zA-Z0-9]'){
+                  if($plainpass -match '\d'){
+                        if($plainpass -match '[a-zA-Z]'){
+                                    return $true
+                                    }
+                                        } } }
+                           else {return $false}
+}
