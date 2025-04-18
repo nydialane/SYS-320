@@ -17,7 +17,7 @@ $tableRecords += [pscustomobject]@{ "IP" = $words[0]; `
                                     "Referrer" = $words[10]; `
                                     }
 } #end of for loop
-return $tableRecords | Where-Object {$_.IP -ilike "10.*"}
+return $tableRecords #| Where-Object {$_.IP -ilike "10.*"}
 }
 $tableRecords = ApacheLogs1 
 $tableRecords | Format-Table -AutoSize -Wrap
