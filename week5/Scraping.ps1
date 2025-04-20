@@ -1,6 +1,6 @@
 ﻿function gatherClasses(){
 
-$page = Invoke-WebRequest -TimeoutSec 2 http://localhost/courses.html
+$page = Invoke-WebRequest -TimeoutSec 10 http://localhost/courses.html
 
 # tr elements
 
@@ -29,3 +29,4 @@ for($i=1; $i -lt $trs.length; $i++){
 return $FullTable
 }
 gatherClasses
+$PSVersionTable
