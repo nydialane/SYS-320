@@ -1,0 +1,3 @@
+﻿
+daysTranslator($FullTable)
+gatherClasses
